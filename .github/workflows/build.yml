@@ -1,0 +1,5 @@
+on: [push]
+
+jobs:
+  build:
+    uses: snize/zmk-keyboard-suzuri/.github/workflows/build.yml@main

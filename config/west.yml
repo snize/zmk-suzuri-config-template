@@ -1,0 +1,11 @@
+manifest:
+  remotes:
+    - name: snize
+      url-base: https://github.com/snize
+  projects:
+    - name: zmk-keyboard-suzuri
+      remote: snize
+      revision: main
+      import: config/west.yml
+  self:
+    path: config
