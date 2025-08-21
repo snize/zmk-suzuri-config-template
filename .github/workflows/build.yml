@@ -1,5 +1,9 @@
-on: [push]
+on:
+  push:
+    branches: ['**']
 
 jobs:
   build:
-    uses: snize/zmk-keyboard-suzuri/.github/workflows/build.yml@main
+    uses: snize/zmk-keyboard-suzuri/.github/workflows/build.yml@main  # 安定運用はタグ参照推奨
+    permissions:
+      contents: write
